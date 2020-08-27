@@ -9,7 +9,7 @@ function start() {
   rangeGreen.addEventListener('input', alteraValor);
   rangeBlue.addEventListener('input', alteraValor);
 }
-
+//função chamada ao alterar os inputs
 function alteraValor() {
   textRed.value = rangeRed.value;
   textGreen.value = rangeGreen.value;
@@ -19,7 +19,7 @@ function alteraValor() {
   b = rangeBlue.value;
   criaDiv(r, g, b);
 }
-
+//renderiza a colorbox
 function criaDiv(r, g, b) {
   var colorBox = document.querySelector('.colorBox');
   var div = document.createElement('div');
